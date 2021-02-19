@@ -14,7 +14,7 @@ ul {
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 0.5px;
-
+    cursor: pointer;
 }
 
 body {
@@ -39,6 +39,7 @@ header h3 {
 }
 
 main {
+
     background-color: rgb(60, 63, 69);
     display: flex;
     justify-content: center;
@@ -49,14 +50,28 @@ main {
 
 
 ul li {
+
     padding: 20px;
     width: 70vw;
     /* display: flex;
     align-items: baseline; */
+
+}
+
+label,
+.small-latters,
+.big-latters ul,
+li,
+a {
+    cursor: pointer;
 }
 
 li .small-letters {
     font-size: 15px;
+    position: relative;
+    bottom: 3.5px;
+
+
 }
 
 ul li:nth-of-type(odd) {
@@ -75,11 +90,13 @@ ul li:last-of-type {
 }
 
 ul li:hover {
+
     background-color: rgb(98, 95, 119);
     border-top: 5px solid #fff;
     border-bottom: 5px solid #fff;
 }
 
-input:checked {
-    color: red;
+input:checked+label {
+    text-decoration: line-through;
+
 }

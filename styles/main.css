@@ -27,6 +27,8 @@ body {
     font-family: 'Proxima Nova';
 }
 
+
+
 .footer {
     width: 867px;
     display: flex;
@@ -85,4 +87,10 @@ footer .card .icon:hover {
 
 footer .card .icon:hover path {
     fill: rgb(18, 117, 185)
+}
+
+.link-homework {
+    align-self: center;
+
+
 }
